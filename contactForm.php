@@ -8,7 +8,7 @@ if(isset($_POST['submit']))
 	if(isset($_POST['g-recaptcha-response'])){
 		$captcha=$_POST['g-recaptcha-response'];
 	  }
-	  if(!$captcha){
+	  if(!$captcha)
 		echo 'Please Fill Captcha';
 		$secretKey = "Put your secret key here";
         $ip = $_SERVER['REMOTE_ADDR'];
